@@ -4,6 +4,8 @@ Route::get('/', function () {
    return 'Home';
 });
 
+Route::get('/chartjs', 'HomeController@chartjs');
+
 Route::get('/usuarios', 'UserController@index')
     ->name('users.index');
 
